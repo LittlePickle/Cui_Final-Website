@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dark Souls Wiki FeedBack</title>
+    <style>
+        .title{
+            margin: 30px auto;
+            text-align: center;
+            font-size: 30px;
+        }
+        .feedback-form {
+            width: 500px;
+            margin: 0 auto; 
+            color: #fff;
+            font-size: 16px;
+        }
+        .feedback-form p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .feedback-form input[type=text]{
+            width: 300px;
+            height: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            outline: none;
+            border: 1px solid #fff;
+        }
+        .feedback-form input[type=email]{
+            width: 300px;
+            height: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            outline: none;
+            border: 1px solid #fff;
+        }
+        .feedback-form > textarea {
+            width: 400px;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        form label[for=name]{
+            display: inline-block;
+            width: 80px;
+        }
+        form label[for=email]{
+            display: inline-block;
+            width: 80px;
+        }
+        form label[for=FeedBack]{
+            display: block;
+            margin-bottom: 15px;
+        }
+        form input[type=checkbox]{
+            margin-right: 8px;
+        }
+        #submit {
+            width: 400px;
+            height: 40px;
+            margin-top: 10px;
+            background-color: #ffad00;
+            color: #fff;
+            border-radius: 6px;
+            border: 1px solid #ffad00;
+            outline: none;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!--title with logo,while the logo has been click, should return to the index.html-->
+            <h1 id="logo">
+                <a href="index.html">
+                    <img src="image/Logo.png" alt="logo" width="70" height="70">
+                    <!-- <p style="background-image: linear-gradient(black, #9c1a00);">Dark Souls Wiki</p> -->
+                    <span>Dark Souls Wiki</span>
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home Page</a></li>
+                    <li> <a href="News.html">News</a></li>
+                    <li> <a href="FeedBack.html">FeedBack?</a> </li>
+                    <li>
+                        <a href="">WalkThrough Guides</a>
+                        <ul class="second">
+                            <li>
+                                <a href="WalkThroughGuide01.html">Cemetery of Ash</a>
+                            </li>
+                            <li>
+                                <a href="empty.html">Firelink Shrine</a>
+                            </li>
+                            <li>
+                                <a href="empty.html">High Wall of Lothric</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> 
+        </div>
+        <!--Nav bar in every page-->
+    </header>
+    <main>
+        <h2 class="title">Bugs ? Issues ? Beteer Soultions? Please tell us!</h2>
+        <form class="feedback-form" name="input" action="html_form_action.php" method="get">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="username"><br>
+            <label for="email">Email:</label>
+            <input type="email" email="email" name="email" id="email"><br>
+            <label for="FeedBack">Reporting?(Multiple choice)</label>
+            <input type="checkbox" name="FeedBack" value="Bug" checked>Bug<br>
+            <input type="checkbox" name="FeedBack" value="Issues">Issues<br>
+            <input type="checkbox" name="FeedBack" value="Better Soultions">Better Soultions<br><br>
+            <p>Please describe your FeedBack:</p>
+            <textarea rows="15" cols="30" id="feedback"></textarea><br>
+            <input type="button" value="Submit" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p> A Company Does Not Located On.LLC&reg;</p>
+        <p> 404 Bridge Avenue</p>
+        <p>Someville CA</p>
+        <p>USA 40404</p>
+        <!--form has been delete due to the consider of aesthetics-->
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

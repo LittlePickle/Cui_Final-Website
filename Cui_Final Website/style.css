@@ -1,0 +1,115 @@
+/** Chenhao Cui **/
+/** Change the golbal BackgroundColor**/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+ul li{
+    list-style:none;
+}
+body {
+    background: url(./image/bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+.container, main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+header{
+    background-color: #ffad00;
+    height:70px;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 80px;
+}
+header #logo{
+    float: left;
+    color: #fff;
+}
+header #logo img{
+    float: left;
+    margin-right: 10px;
+}
+header #logo span{
+    color: #fff;
+}
+header nav{ 
+    float: right;
+}
+nav li {
+    float: left;
+    position: relative;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 15px;
+    margin: 0 20px;
+    height: 70px;
+}
+nav li:hover {
+    background-color: #111;
+}
+nav .second{
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    background-color: #ffad00;
+    display: none;
+}
+nav li:hover .second{
+    display: block;
+}
+main{
+    margin-top: 100px;
+}
+footer {
+    margin: 150px auto 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 20px
+}
+
+footer p {
+    margin: 0 12px;
+}
+
+#news a{
+    text-align: center;
+    font-size: 30px;
+    margin-top:30%;
+    display: block;
+    margin-bottom: 30%;
+    color: #fff;
+}
+#list li,#list{
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.article img{
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.more{
+    color: red;
+}
